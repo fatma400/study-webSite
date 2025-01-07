@@ -1,0 +1,492 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+img{
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+.contant{
+    background: linear-gradient(to bottom, #5274ff 8%, #c054ff 40%);
+    height:350px;
+    color: white;
+    position: relative;
+}
+.conHeader{
+    width: 100%;
+    height: 100px;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+li{
+    list-style: none;
+    padding: 0 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+.button a{
+    margin-left: 15px;
+    display: inline-block;
+    padding: 15px 39px;
+    background:#FF9F67; 
+    text-transform: capitalize;
+    border: 1px solid #c054ff ; 
+}
+.button .btn2{
+    padding: 15px 39px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.btnJoin{
+    position: relative;
+    z-index:1;
+}
+.btnJoin::after{
+    content: "";
+    width:0;
+    height: 100%;
+    position: absolute;
+    background-color: #c054ff;
+    inset: 0;
+    z-index:-1;
+    transition: all .5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.btnJoin:hover::after{
+    width:100%;
+}
+.btn2{
+    position: relative;
+    z-index: 1;
+}
+.btn2::after{
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    background-color: #FF9F67;
+    inset: 0;
+    z-index: -1;
+    transition: all .5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.btn2:hover::after{
+    width: 100%;
+}
+.homeText{
+    padding: 70px 60px;
+}
+.column{
+    padding: 20px 50px;
+}
+.column h1{
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+.column a{
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+    line-height: 1;
+    font-weight: 400;
+}
+.mainCourses{
+    margin-top:80px;
+    padding: 30px 50px;
+}
+.mainCourses h2{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom:60px;
+    color: #4255A4;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.itemCourses{
+    margin-left: 30px;
+    box-shadow:1px 2px 11px #808080b8
+}
+.first{
+    margin-top: 30px;
+    margin-bottom:1px;
+    color: #6E7697;
+}
+.itemText p{
+    line-height:1.7;
+    font-size: 16px;
+    color: #6E7697;
+    position: relative;
+}
+.line{
+    color: #4255A4;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.7;
+}
+.line:hover{
+   text-decoration: underline;
+}
+.itemText .fa-solid{
+    font-size: 14px;
+    color: #FF7B2E;
+    line-height: 2.5;
+    margin-top: 15px;
+}
+.itemText span{
+    color: #FF7B2E;
+    font-size: 12px;
+}
+.itemText .dollar{
+    color: #4255A4;
+    font-size: 23px;
+    position: absolute;
+    top:-8px;
+    right: 0;
+}
+.itemBtn a{
+    color: #4255A4;
+    margin-top:30px;
+    display: block;
+    width:90%;
+    margin-left: 17px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid #E2E4FF;
+    color: #4255A4;
+    border-radius: 5px;
+    padding: 17px 42px;
+    position: relative;
+    z-index: 1;
+    transition: all .3s;
+}
+.itemBtn a::after{
+    content: "";
+    background-color:#ff7b2ed3;
+    width:100%;
+    height:0;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: all .5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.itemBtn a:hover::after{
+     transition: all ;
+    height:100%;
+}
+.itemBtn:hover a{
+    color: white;
+}
+.mainTwo{
+    margin-top:5px;
+}
+.groundBtn{
+    width:25%;
+    color: #FF7B2E;
+    margin: 20px auto;
+}
+.groundBtn a{
+    margin-top:30px;
+    display: block;
+    width:90%;
+    margin-left: 17px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid #FF7B2E;
+    color: #FF7B2E;
+    border-radius: 5px;
+    padding: 17px 42px;
+    position: relative;
+    z-index: 1;
+}
+.groundBtn a::after{
+    content: "";
+    background-color:#ff7b2ed3;
+    width:100%;
+    height:0;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transition: all .5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.groundBtn a:hover::after{
+    height:100%;
+}
+.groundBtn:hover a{
+    color: white;
+}
+.groundImg{
+    padding:70px 5px;
+}
+.groundImg h2{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 21px;
+    color: #4255A4;
+}
+.itemGround{
+    width: 25%;
+    padding: 0 15px;
+    position: relative;
+}
+.textGround a{
+    color: white;
+    font-size:20px;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    transition: all .3s;
+}
+.textGround a:hover{
+    text-decoration: underline;
+}
+.imgGround{
+    position: relative;
+}
+.imgGround::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.459);
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: all .3s;
+}
+.imgGround:hover::after{
+    opacity: 1;
+}
+.endRow .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    margin-top:10px;
+    padding: 30px 30px;
+}
+.card{
+    width:32%;
+    height:110px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-items: center;
+    background-color: white;
+    color: blue;
+    padding: 10px 50px;
+    border-radius:15px;  
+}
+.colText{
+    margin-left:15px;
+}
+.colText h3{
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #4255A4;
+}
+.colText p{
+    font-size: 17px;
+    line-height: 1.5;
+    color: #4255A4;
+    margin-bottom: 0;
+}
+.colImg{
+   width:60px;
+}
+footer{
+    background-color: #4255A4;
+    padding: 50px 10px;
+    margin-top: 50px;
+}
+.containearFoot .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.itemFooter{
+    width: 25%;
+    padding: 5px 26px;
+}
+.itemFooter img{
+    padding: 0 10px;
+    width:155px;
+    margin-bottom:30px;
+}
+footer h4{
+    text-align: center;
+}
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.foot1 p{
+    font-size: 16px;
+    line-height: 1.8; 
+    color: white;
+}
+.foot1 a{
+    background: rgba(128, 136, 255, 0.1);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 8px;
+    margin-top: 40px;
+    transition: all .3s;
+}
+.foot1 a:hover{
+    background-color: #c054ff;
+}
+.foot2 h4{
+    color: #fff;
+    font-size: 22px;
+    line-height:4;
+    font-weight: 600;
+} 
+.foot2 a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height:2.3;
+    transition: all .3s;
+}
+.foot2 a:hover{
+    text-decoration: underline;
+}
+.end{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width:992px){
+    .groundBtn{
+        width:30%;
+    }
+    .card{
+        width:33%;
+    }
+    .colText h3{
+        font-size:17px;
+    }
+    .colText p{
+        font-size: 15px;
+    }
+    .itemFooter{
+        width: 30%;
+    }
+}
+@media screen and (max-width:800px){
+    .conHeader{
+        width: 100%;
+        height:120px;
+    }
+    .button{
+        margin-top: 20px;
+    }
+    .card{
+        width:29%;
+    }
+    .colText h3{
+        font-size:17px;
+        line-height: 1.2;
+    }
+    .colText p{
+        font-size:13px;
+        line-height: 1.5;
+    }
+    .groundBtn{
+        width:40%;
+        text-align: center;
+    }
+    .item{
+        flex-wrap: wrap;
+    }
+    .card{
+        width:50%;
+    }
+    .itemFooter{
+        width:35%;
+    }
+}
+@media screen and (max-width:768px){
+    .groundBtn{
+        width:40%;
+        text-align: center;
+    }
+    .item{
+        flex-wrap: wrap;
+    }
+    .card{
+        width:50%;
+    }
+    .itemFooter{
+        width:35%;
+    }
+}
+@media screen and (max-width:600px){
+    .row{
+        padding: 30px 10px;
+    }
+    .contant{
+        height:380px;
+    }
+    .conHeader{
+        width: 100%;
+        height:155px;
+    }
+    a{
+        font-size: 14px;
+    }
+    .button a{
+        padding: 15px 30px;
+    }
+    .button .btn2{
+        padding: 15px 30px;
+    }
+    .groundBtn{
+        width:50%;
+        text-align: center;
+    }
+    .card{
+        width:70%;
+        height:110px;
+        padding: 40px 50px;
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+    .foot1 a{
+        width:30px;
+        height:30px;
+        margin-right: 5px;
+    }
+}
